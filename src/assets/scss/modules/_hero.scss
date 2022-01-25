@@ -1,0 +1,125 @@
+.heroContent {
+  margin: 0px auto !important;
+  padding: 3rem 2rem 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 6rem 5rem 2rem;
+  }
+
+  .heroContainer {
+    width: 100%;
+    max-width: 768px;
+    @media sreen and (min-width: 768px) {
+    }
+    &__text {
+      display: block;
+      margin-bottom: 4rem !important;
+    }
+  }
+
+  .mainTitle {
+    font-size: 2.9rem;
+    color: $bluegray3;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    @media screen and (min-width: 567px) {
+      font-size: 3.8rem;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 4.2rem;
+    }
+    @media screen and (min-width: 960) {
+      font-size: 5rem;
+    }
+  }
+
+  .subTitle {
+    font-size: 2.2rem;
+    color: $bluegray3;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    span {
+      color: $mainBlueColor;
+      font-weight: 400;
+    }
+    @media screen and (min-width: 567px) {
+      font-size: 2.4rem;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 2.6rem;
+    }
+    @media screen and (min-width: 960px) {
+      font-size: 3rem;
+    }
+  }
+  .subTitle2 {
+    font-size: 1.8rem;
+    color: $bluegray3;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    span {
+      color: $mainBlueColor;
+      font-weight: 400;
+    }
+    @media screen and (min-width: 567px) {
+      font-size: 1.8rem;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 960px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .body {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $bluegray3;
+    margin-bottom: 2rem;
+    text-align: justify;
+    @media screen and (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .heroButtons {
+    margin-top: 0px;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    .buttonsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 550px) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .iconsCont {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+
+    a {
+      font-size: 3rem;
+      margin: 0px;
+      padding: 0px;
+      color: #581980;
+      transition: color 0.2s ease-out;
+      &:hover {
+        color: #b133ff;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $fontColor;
+  position: relative;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+a {
+  text-decoration: none;
+}

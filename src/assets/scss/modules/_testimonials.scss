@@ -1,0 +1,102 @@
+.testimonialsSection {
+  width: 90%;
+  max-width: 1127px;
+  margin: 3rem auto;
+  @media screen and (min-width: 768px) {
+    width: 95%;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 200 !important;
+    text-transform: uppercase;
+    font-size: 5rem !important;
+  }
+
+  &__center {
+    margin: 0px auto;
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    article {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.5s linear;
+
+      &.activeSlide {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+
+      &.lastSlide {
+        transform: translateX(-100%);
+      }
+
+      &.nextSlide {
+        transform: translateX(100%);
+      }
+    }
+
+    .personImg {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 3rem;
+      border-radius: 30%;
+    }
+
+    .personName {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-size: 1.9rem;
+      color: $fontColor;
+    }
+
+    .personTitle {
+      font-weight: 300;
+      font-size: 1.7rem;
+      color: darken($fontColor, 10%);
+      text-transform: capitalize;
+      margin-bottom: 0.8rem;
+    }
+
+    .personQuote {
+      font-size: 1.5rem;
+      color: darken($fontColor, 30%);
+      max-width: 70%;
+      text-align: center;
+      margin: 0px auto;
+    }
+
+    .btnPrev,
+    .btnNext {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      width: 2rem;
+      height: auto;
+      display: grid;
+      place-items: center;
+    }
+    .btnPrev {
+      left: 0px;
+    }
+    .btnNext {
+      right: 0px;
+    }
+  }
+}

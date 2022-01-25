@@ -1,0 +1,113 @@
+.contact {
+  margin: 0px;
+  padding: 2rem 1rem;
+  @media screen and (min-width: 600px) {
+    padding: 3.4rem 2rem;
+  }
+  @media screen and (min-width: 900px) {
+    padding: 4.2rem 3.4rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 5rem 5rem;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    font-size: 2.8rem !important;
+
+    @media screen and (min-width: 600px) {
+      font-size: 3.2rem !important;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 4.4rem !important;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 5rem !important;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+    }
+    &--left {
+      width: 100%;
+      @media screen and (min-width: 1000px) {
+        width: 48%;
+      }
+    }
+
+    &--right {
+      width: 100%;
+      /* background-color: rgba($light3, 0.8); */
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 4px;
+      @media screen and (min-width: 1000px) {
+        width: 48%;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+/* CONTACT ITEMS */
+
+.contactItem {
+  background-color: $sidebar;
+  margin-bottom: 3rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: rgba(255, 255, 255, 0.075) 0px 0px 0px 1px;
+
+  &__icon {
+    line-height: 0;
+    padding: 1.8rem;
+    border: 1px solid $mainBorderColor;
+
+    svg {
+      font-size: 4rem !important;
+      color: $mainBorderColor;
+    }
+  }
+
+  &__text {
+    margin-left: 2rem;
+    &--title {
+    }
+    &--text1 {
+      font-size: 2rem !important;
+      font-weight: 200;
+    }
+    &--text2 {
+    }
+  }
+}
+
+/* CONTACT FORM */
+
+.contactForm {
+  &__sectionTitle {
+    text-align: center;
+    font-size: 2rem !important;
+    font-weight: 200;
+    color: $fontColor;
+    margin-bottom: 0px !important;
+  }
+  &__sectionSubTitle {
+    text-align: center;
+    font-size: 1.4rem !important;
+    font-weight: 200;
+    color: darken($fontColor, 15%);
+    margin-bottom: 0px !important;
+  }
+}

@@ -1,0 +1,80 @@
+.MuiPaper-root {
+  border-right: none;
+  background-color: $sidebar;
+  border-right: $mainBorderColor;
+  background-color: $sidebar !important;
+}
+
+.sidenav {
+  /* background-color: $sidebar; */
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__profile {
+    padding: 3rem 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid $mainBorderColor;
+
+    img {
+      width: 70%;
+      border-radius: 50%;
+      border: 4px solid $mainBorderColor;
+    }
+  }
+
+  &__navLinks {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin: 0px !important;
+    .navButton {
+      padding: 1rem 1rem 1rem 2rem;
+      color: $dark6;
+      position: relative;
+      &__icon {
+        color: $dark6;
+        font-size: 1.8rem;
+      }
+      &__text span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-color: rgba($blue7, 1);
+      }
+    }
+
+    .active {
+      .navButton {
+        cursor: default;
+        background-color: $blue6;
+        color: $light1;
+        &__icon {
+          color: $light1;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    border-top: 1px solid $mainBorderColor;
+    padding: 2rem 1rem 2.5rem;
+
+    p {
+      margin: 0px;
+      padding: 0px;
+      font-size: 1.2rem;
+      text-align: center;
+      color: $fontColor;
+    }
+  }
+}
